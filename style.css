@@ -9,12 +9,12 @@
   --main-color: #303030;
   --bg-color: whitesmoke;
   --clr-btn-decrease: #ff2b41;
-  --clr-btn-reset: #b0b5b0;
+  --clr-btn-reset: #ffee6b;
   --clr-btn-increase: #1cad1c;
-  --ff-primary: 'Notable', sans-serif;
-  --fs-h1: 3rem;
+  --ff-primary: 'Oswald', sans-serif;
+  --fs-h1: 5rem;
   --fs-number: 5rem;
-  --fs-btn: 1rem;
+  --fs-btn: 2.5rem;
 }
 
 body {
@@ -37,6 +37,7 @@ body {
 
 .my-number {
   font-size: var(--fs-number);
+  text-shadow: 0 0 10px var(--clr-btn-reset);
 }
 
 .btn {
