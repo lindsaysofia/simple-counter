@@ -1,0 +1,72 @@
+/* Set up border box box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #303030;
+  --bg-color: whitesmoke;
+  --clr-btn-decrease: #ff2b41;
+  --clr-btn-reset: #b0b5b0;
+  --clr-btn-increase: #1cad1c;
+  --ff-primary: 'Notable', sans-serif;
+  --fs-h1: 3rem;
+  --fs-number: 5rem;
+  --fs-btn: 1rem;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--main-color);
+  margin: 0;
+  font-family: var(--ff-primary);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.title {
+  font-size: var(--fs-h1);
+}
+
+.my-number {
+  font-size: var(--fs-number);
+}
+
+.btn {
+  font-size: var(--fs-btn);
+  font-family: var(--ff-primary);
+  outline: none;
+  background-color: var(--main-color);
+  color: var(--bg-color);
+  border: none;
+  padding: .5em;
+  margin: .5em;
+}
+
+.btn-decrease:hover,
+.btn-reset:hover,
+.btn-increase:hover {
+  cursor: pointer;
+}
+
+.btn-decrease:hover {
+  box-shadow: 0 0 10px var(--clr-btn-decrease);
+  color: var(--clr-btn-decrease);
+}
+
+.btn-reset:hover {
+  box-shadow: 0 0 10px var(--clr-btn-reset);
+  color: var(--clr-btn-reset);
+}
+
+.btn-increase:hover {
+  box-shadow: 0 0 10px var(--clr-btn-increase);
+  color: var(--clr-btn-increase);
+}
